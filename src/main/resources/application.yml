@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/control_usuarios
+    username: root
+    password: 
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    # si hay un error en la sentencia SQL, muestra el query
+    show-sql: true

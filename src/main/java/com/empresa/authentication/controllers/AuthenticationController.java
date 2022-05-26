@@ -28,7 +28,7 @@ public class AuthenticationController extends ControlBase {
 			return new ResponseEntity<>("LOGIN OK", super.httpHeaderOk(), HttpStatus.OK);
 		} catch (Exception e) {
 			
-			return new ResponseEntity<>("LOGIN OK", super.httpHeaderOk(), HttpStatus.FORBIDDEN);
+			return new ResponseEntity<>("LOGIN ERROR", super.httpHeaderOk(), HttpStatus.FORBIDDEN);
 		}
 		
 
